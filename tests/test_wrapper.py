@@ -1,1 +1,405 @@
-IyBydWZmOiBub3FhOiBFNDAyCgppbXBvcnQgaW8KaW1wb3J0IG9zCmltcG9ydCBzaHV0aWwKaW1wb3J0IHN5cwppbXBvcnQgdW5pdHRlc3QKZnJvbSB1bml0dGVzdC5tb2NrIGltcG9ydCBwYXRjaAoKIyBCb290c3RyYXAgcGF0aApjdXJyZW50X2RpciA9IG9zLnBhdGguZGlybmFtZShvcy5wYXRoLmFic3BhdGgoX19maWxlX18pKQpza2lsbF9yb290ID0gb3MucGF0aC5kaXJuYW1lKGN1cnJlbnRfZGlyKQpzY3JpcHRzX3BhdGggPSBvcy5wYXRoLmpvaW4oc2tpbGxfcm9vdCwgInNjcmlwdHMiKQp2ZW5kb3JfcGF0aCA9IG9zLnBhdGguam9pbihzY3JpcHRzX3BhdGgsICJ2ZW5kb3IiKQppZiBzY3JpcHRzX3BhdGggbm90IGluIHN5cy5wYXRoOgogICAgc3lzLnBhdGguaW5zZXJ0KDAsIHNjcmlwdHNfcGF0aCkKaWYgdmVuZG9yX3BhdGggbm90IGluIHN5cy5wYXRoOgogICAgc3lzLnBhdGguaW5zZXJ0KDAsIHZlbmRvcl9wYXRoKQoKZnJvbSBjbG91ZF9tYW5hZ2VyIGltcG9ydCBDbG91ZE1hbmFnZXIKZnJvbSBjb3JlLm1vY2tpbmdfb3BzIGltcG9ydCBNb2NrQXVkaW9NYXRlcmlhbCwgTW9ja1ZpZGVvTWF0ZXJpYWwKZnJvbSBkcmFmdF9pbnNwZWN0b3IgaW1wb3J0IGNtZF9zdW1tYXJ5CmZyb20ganlfd3JhcHBlciBpbXBvcnQgSnlQcm9qZWN0LCBkcmFmdApmcm9tIHV0aWxzLmZvcm1hdHRlcnMgaW1wb3J0IHNhZmVfdGltCmZyb20gdXRpbHMubWVkaWFfbm9ybWFsaXplciBpbXBvcnQgc2hvdWxkX25vcm1hbGl6ZV92aWRlb19mb3JfamlhbnlpbmcKCgpjbGFzcyBUZXN0SnlXcmFwcGVyKHVuaXR0ZXN0LlRlc3RDYXNlKToKICAgIEBjbGFzc21ldGhvZAogICAgZGVmIHNldFVwQ2xhc3MoY2xzKToKICAgICAgICAjIOS9v+eUqOS4tOaXtuebruW9leS9nOS4uua1i+ivleeOr+WigwogICAgICAgIGNscy50ZXN0X291dHB1dCA9IG9zLnBhdGguam9pbihjdXJyZW50X2RpciwgIm91dHB1dCIpCiAgICAgICAgaWYgb3MucGF0aC5leGlzdHMoY2xzLnRlc3Rfb3V0cHV0KToKICAgICAgICAgICAgc2h1dGlsLnJtdHJlZShjbHMudGVzdF9vdXRwdXQpCiAgICAgICAgb3MubWFrZWRpcnMoY2xzLnRlc3Rfb3V0cHV0KQoKICAgICAgICAjIOWHhuWkh+S4gOS4quWBh+eahOe0oOadkOaWh+S7tueUqOS6jua1i+ivlSAo56m65paH5Lu25Y2z5Y+v77yM5Y+q6KaB6Lev5b6E5a2Y5ZyoKQogICAgICAgIGNscy50ZXN0X21lZGlhID0gb3MucGF0aC5qb2luKGNscy50ZXN0X291dHB1dCwgInRlc3RfdmlkZW8ubXA0IikKICAgICAgICB3aXRoIG9wZW4oY2xzLnRlc3RfbWVkaWEsICJ3YiIpIGFzIGY6CiAgICAgICAgICAgIGYud3JpdGUoYiJceDAwIiAqIDEwMjQpCgogICAgZGVmIHRlc3RfMDFfaW5pdGlhbGl6YXRpb24oc2VsZik6CiAgICAgICAgIiIi5rWL6K+V6aG555uu5Yid5aeL5YyW5LiO6Lev5b6E5o6i5rWLIiIiCiAgICAgICAgcCA9IEp5UHJvamVjdCgiVGVzdEluaXQiLCBkcmFmdHNfcm9vdD1zZWxmLnRlc3Rfb3V0cHV0LCBvdmVyd3JpdGU9VHJ1ZSkKICAgICAgICBzZWxmLmFzc2VydFRydWUob3MucGF0aC5leGlzdHMob3MucGF0aC5qb2luKHNlbGYudGVzdF9vdXRwdXQsICJUZXN0SW5pdCIpKSkKICAgICAgICBzZWxmLmFzc2VydElzSW5zdGFuY2UocC5zY3JpcHQsIGRyYWZ0LlNjcmlwdEZpbGUpCgogICAgZGVmIHRlc3RfMDJfYWRkX3RleHRfc2ltcGxlKHNlbGYpOgogICAgICAgICIiIua1i+ivleaWh+acrOa3u+WKoOS4juaooeeziuWMuemFjSIiIgogICAgICAgIHAgPSBKeVByb2plY3QoIlRlc3RUZXh0IiwgZHJhZnRzX3Jvb3Q9c2VsZi50ZXN0X291dHB1dCwgb3ZlcndyaXRlPVRydWUpCiAgICAgICAgIyDmtYvor5XmqKHns4rljLnphY0gIlR5cGV3cml0ZXIiIC0+ICLlpI3lj6TmiZPlrZfmnLoiCiAgICAgICAgc2VnID0gcC5hZGRfdGV4dF9zaW1wbGUoIkhlbGxvIiwgIjBzIiwgIjNzIiwgYW5pbV9pbj0iVHlwZXdyaXRlciIpCiAgICAgICAgc2VsZi5hc3NlcnRJc05vdE5vbmUoc2VnKQogICAgICAgICMg6aqM6K+B5piv5ZCm55yf55qE5re75Yqg5Yiw5LqG6L2o6YGTCiAgICAgICAgIyDms6jmhI/vvJrov5nph4zpnIDopoHmoLnmja7lupXlsYLlupPnmoTlhbfkvZPnu5PmnoTmnaXmlq3oqIAKICAgICAgICAjIOWFvOWuuSBEaWN0L0xpc3QKICAgICAgICB0cmFja3NfaXRlciA9ICgKICAgICAgICAgICAgcC5zY3JpcHQudHJhY2tzLnZhbHVlcygpIGlmIGlzaW5zdGFuY2UocC5zY3JpcHQudHJhY2tzLCBkaWN0KSBlbHNlIHAuc2NyaXB0LnRyYWNrcwogICAgICAgICkKCiAgICAgICAgZm91bmQgPSBGYWxzZQogICAgICAgIGZvciB0cmFjayBpbiB0cmFja3NfaXRlcjoKICAgICAgICAgICAgdF90eXBlID0gZ2V0YXR0cih0cmFjaywgInRyYWNrX3R5cGUiLCBOb25lKSBvciBnZXRhdHRyKHRyYWNrLCAidHlwZSIsIE5vbmUpCiAgICAgICAgICAgIGlmIHRfdHlwZSA9PSBkcmFmdC5UcmFja1R5cGUudGV4dDoKICAgICAgICAgICAgICAgIGlmIGxlbih0cmFjay5zZWdtZW50cykgPiAwOgogICAgICAgICAgICAgICAgICAgIGZvdW5kID0gVHJ1ZQogICAgICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgc2VsZi5hc3NlcnRUcnVlKGZvdW5kLCAiVGV4dCBzZWdtZW50IHNob3VsZCBiZSBhZGRlZCB0byBhIHRleHQgdHJhY2siKQoKICAgIGRlZiB0ZXN0XzAzX2Vuc3VyZV90cmFja19sb2dpYyhzZWxmKToKICAgICAgICAiIiLmtYvor5XovajpgZPljrvph43pgLvovpEiIiIKICAgICAgICBwID0gSnlQcm9qZWN0KCJUZXN0VHJhY2siLCBkcmFmdHNfcm9vdD1zZWxmLnRlc3Rfb3V0cHV0KQogICAgICAgIHAuX2Vuc3VyZV90cmFjayhkcmFmdC5UcmFja1R5cGUudGV4dCwgIk15VHJhY2siKQogICAgICAgIHAuX2Vuc3VyZV90cmFjayhkcmFmdC5UcmFja1R5cGUudGV4dCwgIk15VHJhY2siKQoKICAgICAgICBjb3VudCA9IDAKICAgICAgICB0cmFja3NfaXRlciA9ICgKICAgICAgICAgICAgcC5zY3JpcHQudHJhY2tzLnZhbHVlcygpIGlmIGlzaW5zdGFuY2UocC5zY3JpcHQudHJhY2tzLCBkaWN0KSBlbHNlIHAuc2NyaXB0LnRyYWNrcwogICAgICAgICkKICAgICAgICBmb3IgdCBpbiB0cmFja3NfaXRlcjoKICAgICAgICAgICAgaWYgaGFzYXR0cih0LCAibmFtZSIpIGFuZCB0Lm5hbWUgPT0gIk15VHJhY2siOgogICAgICAgICAgICAgICAgY291bnQgKz0gMQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoY291bnQsIDEsICJUcmFjayBzaG91bGQgbm90IGJlIGR1cGxpY2F0ZWQiKQoKICAgIGRlZiB0ZXN0XzA0X2FkZF90cmFuc2l0aW9uX3NpbXBsZShzZWxmKToKICAgICAgICAiIiLmtYvor5XovazlnLrmt7vliqAgKEFQSSDnqLPlrprmgKfmtYvor5UpIiIiCiAgICAgICAgcCA9IEp5UHJvamVjdCgiVGVzdFRyYW5zIiwgZHJhZnRzX3Jvb3Q9c2VsZi50ZXN0X291dHB1dCkKICAgICAgICAjIOmcgOimgeS4pOS4queJh+autQogICAgICAgIHAuYWRkX21lZGlhX3NhZmUoc2VsZi50ZXN0X21lZGlhLCAiMHMiLCAiM3MiLCB0cmFja19uYW1lPSJWMSIpCiAgICAgICAgcC5hZGRfbWVkaWFfc2FmZShzZWxmLnRlc3RfbWVkaWEsICIzcyIsICIzcyIsIHRyYWNrX25hbWU9IlYxIikKCiAgICAgICAgIyDlsJ3or5Xmt7vliqDovazlnLoKICAgICAgICAjIOazqOaEj++8mueUseS6juaIkeS7rOeUqOeahOaYr+WBh+e0oOadkO+8jGFkZF9tZWRpYV9zYWZlIOWPr+iDveS8muWboOS4uuivu+WPluaXtumVv+Wksei0peOAggogICAgICAgICMg5q2k5pe2IGFkZF9tZWRpYV9zYWZlIOW6lOivpei/lOWbniBOb25lIOS4lOaJk+WNsOmUmeivr++8jOS9huS4jSBDcmFzaOOAggogICAgICAgICMg5oiR5Lus6L+Z6YeM5Li76KaB5rWL6K+VIFdyYXBwZXIg55qE5YGl5aOu5oCn44CCCiAgICAgICAgcC5hZGRfdHJhbnNpdGlvbl9zaW1wbGUoIkJsYWNrRmFkZSIsIGR1cmF0aW9uPSIwLjVzIiwgdHJhY2tfbmFtZT0iVjEiKQogICAgICAgICMg5Y+q6KaB5LiN5oql6ZSZIENyYXNoIOWwseeul+mAmui/hwoKICAgIGRlZiB0ZXN0XzA1X3Byb2plY3RfbmFtZV9zYW5pdGl6YXRpb24oc2VsZik6CiAgICAgICAgIiIi5rWL6K+VIHByb2plY3RfbmFtZSDkvJrooqvlronlhajljJbkuJTkuI3otornlYzliLAgcm9vdCDlpJYiIiIKICAgICAgICBwID0gSnlQcm9qZWN0KCIuLlxcLi5cXEJhZDpOYW1lKiIsIGRyYWZ0c19yb290PXNlbGYudGVzdF9vdXRwdXQsIG92ZXJ3cml0ZT1UcnVlKQogICAgICAgIHNlbGYuYXNzZXJ0Tm90SW4oIi4uIiwgcC5uYW1lKQogICAgICAgIHNlbGYuYXNzZXJ0Tm90SW4oIjoiLCBwLm5hbWUpCiAgICAgICAgc2VsZi5hc3NlcnRUcnVlKG9zLnBhdGguYWJzcGF0aChwLmRyYWZ0X2Rpcikuc3RhcnRzd2l0aChvcy5wYXRoLmFic3BhdGgoc2VsZi50ZXN0X291dHB1dCkpKQoKICAgIGRlZiB0ZXN0XzA2X2Nsb3VkX3VybF9ndWFyZChzZWxmKToKICAgICAgICAiIiLmtYvor5XkupHkuIvovb0gVVJMIOWuieWFqOagoemqjO+8mumYu+aWrSBsb2NhbGhvc3Qv56eB572R5Zyw5Z2AIiIiCiAgICAgICAgY20gPSBDbG91ZE1hbmFnZXIoKQogICAgICAgIHNlbGYuYXNzZXJ0VHJ1ZShjbS5faXNfc2FmZV9kb3dubG9hZF91cmwoImh0dHBzOi8vZXhhbXBsZS5jb20vYS5tcDQiKSkKICAgICAgICBzZWxmLmFzc2VydEZhbHNlKGNtLl9pc19zYWZlX2Rvd25sb2FkX3VybCgiaHR0cDovLzEyNy4wLjAuMS90ZXN0Lm1wNCIpKQogICAgICAgIHNlbGYuYXNzZXJ0RmFsc2UoY20uX2lzX3NhZmVfZG93bmxvYWRfdXJsKCJodHRwOi8vbG9jYWxob3N0L3Rlc3QubXA0IikpCgogICAgZGVmIHRlc3RfMDdfY2xvdWRfaGVhZGVyX2d1YXJkKHNlbGYpOgogICAgICAgICIiIua1i+ivleS4i+i9veWTjeW6lOWktOagoemqjO+8muaLpuaIqiBodG1sIOWSjOi2heWkp+aWh+S7tiIiIgogICAgICAgIGN0ID0gQ2xvdWRNYW5hZ2VyKCkKCiAgICAgICAgY2xhc3MgUmVzcDoKICAgICAgICAgICAgZGVmIF9faW5pdF9fKHNlbGYsIGhlYWRlcnMpOgogICAgICAgICAgICAgICAgc2VsZi5oZWFkZXJzID0gaGVhZGVycwoKICAgICAgICBzZWxmLmFzc2VydEZhbHNlKGNtLl92YWxpZGF0ZV9yZXNwb25zZV9oZWFkZXJzKFJlc3AoeyJDb250ZW50LVR5cGUiOiAidGV4dC9odG1sIn0pKSkKICAgICAgICBzZWxmLmFzc2VydEZhbHNlKGNtLl92YWxpZGF0ZV9yZXNwb25zZV9oZWFkZXJzKFJlc3AoeyJDb250ZW50LVR5cGUiOiAiYXBwbGljYXRpb24vanNvbiJ9KSkpCiAgICAgICAgc2VsZi5hc3NlcnRGYWxzZSgKICAgICAgICAgICAgY20uX3ZhbGlkYXRlX3Jlc3BvbnNlX2hlYWRlcnMoCiAgICAgICAgICAgICAgICBSZXNwKHsiQ29udGVudC1UeXBlIjogInZpZGVvL21wNCIsICJDb250ZW50LUxlbmd0aCI6IHN0cigxMDI0ICogMTAyNCAqIDEwMjQpfSkKICAgICAgICAgICAgKQogICAgICAgICkKICAgICAgICBzZWxmLmFzc2VydFRydWUoCiAgICAgICAgICAgIGNtLl92YWxpZGF0ZV9yZXNwb25zZV9oZWFkZXJzKAogICAgICAgICAgICAgICAgUmVzcCh7IkNvbnRlbnQtVHlwZSI6ICJ2aWRlby9tcDQiLCAiQ29udGVudC1MZW5ndGgiOiAiMTAyNCJ9KQogICAgICAgICAgICApCiAgICAgICAgKQoKICAgIGRlZiB0ZXN0XzA4X3NhZmVfam9pbl9yb290X2d1YXJkKHNlbGYpOgogICAgICAgICIiIua1i+ivleWuieWFqOi3r+W+hOaLvOaOpe+8mumYu+aWrei2iueVjOi3r+W+hCIiIgogICAgICAgIHAgPSBKeVByb2plY3QoIlNhZmVKb2luIiwgZHJhZnRzX3Jvb3Q9c2VsZi50ZXN0X291dHB1dCwgb3ZlcndyaXRlPVRydWUpCiAgICAgICAgd2l0aCBzZWxmLmFzc2VydFJhaXNlcyhWYWx1ZUVycm9yKToKICAgICAgICAgICAgcC5fc2FmZV9qb2luX3Jvb3QoIi4uIiwgIi4uIiwgIldpbmRvd3MiKQoKICAgIGRlZiB0ZXN0XzA5X3NhZmVfdGltX2ludF91c19ub3Rfc2NhbGVkKHNlbGYpOgogICAgICAgICIiIua1i+ivlSBzYWZlX3RpbSDlr7kgaW50IOi+k+WFpeaMieW+ruenkuWkhOeQhu+8jOmBv+WFjSA1NWgg57qn5Yir5pS+5aSnIiIiCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzYWZlX3RpbSgyMDAwMDApLCAyMDAwMDApICAjIDAuMnMKICAgICAgICBzZWxmLmFzc2VydEVxdWFsKHNhZmVfdGltKDEuNSksIDE1MDAwMDApICAjIGZsb2F0IOS7jeaMieenkuino+aekAoKICAgIGRlZiB0ZXN0XzEwX3NhZmVfdGltX2V4cGxpY2l0X3VuaXRzKHNlbGYpOgogICAgICAgICIiIua1i+ivlSBzYWZlX3RpbSDmlK/mjIEgbXMvdXMg5ZKM5aSN5ZCI5Y2V5L2N5a2X56ym5LiyIiIiCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzYWZlX3RpbSgiNTAwbXMiKSwgNTAwMDAwKQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2FmZV90aW0oIjIwMDAwMHVzIiksIDIwMDAwMCkKICAgICAgICBzZWxmLmFzc2VydEVxdWFsKHNhZmVfdGltKCIxbTIuNXMiKSwgNjI1MDAwMDApCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzYWZlX3RpbSgiMWgybTNzNTAwbXMiKSwgMzcyMzUwMDAwMCkKCiAgICBkZWYgdGVzdF8xMV9hdWRpb19hdXRvX2xheWVyaW5nKHNlbGYpOgogICAgICAgICIiIua1i+ivlemfs+mikei9qOmBk+mHjeWPoOaXtuiHquWKqOWIm+W7uuWQjue8gOi9qOmBkyIiIgogICAgICAgIHAgPSBKeVByb2plY3QoIlRlc3RBdWRpb0xheWVyIiwgZHJhZnRzX3Jvb3Q9c2VsZi50ZXN0X291dHB1dCwgb3ZlcndyaXRlPVRydWUpCgogICAgICAgIGRlZiBmYWtlX2F1ZGlvX21hdGVyaWFsKHBhdGgpOgogICAgICAgICAgICByZXR1cm4gTW9ja0F1ZGlvTWF0ZXJpYWwoZiJtYXRfe29zLnBhdGguYmFzZW5hbWUocGF0aCl9IiwgMzAwMDAwMCwgIlRlc3RBdWRpbyIsIHBhdGgpCgogICAgICAgIHdpdGggcGF0Y2goImNvcmUubWVkaWFfb3BzLmRyYWZ0LkF1ZGlvTWF0ZXJpYWwiLCBzaWRlX2VmZmVjdD1mYWtlX2F1ZGlvX21hdGVyaWFsKToKICAgICAgICAgICAgZmlyc3QgPSBwLmFkZF9hdWRpb19zYWZlKAogICAgICAgICAgICAgICAgInZvaWNlX2EubXAzIiwgc3RhcnRfdGltZT0iMHMiLCBkdXJhdGlvbj0iMnMiLCB0cmFja19uYW1lPSJBdWRpb1RyYWNrIgogICAgICAgICAgICApCiAgICAgICAgICAgIHNlY29uZCA9IHAuYWRkX2F1ZGlvX3NhZmUoCiAgICAgICAgICAgICAgICAidm9pY2VfYi5tcDMiLCBzdGFydF90aW1lPSIxcyIsIGR1cmF0aW9uPSIycyIsIHRyYWNrX25hbWU9IkF1ZGlvVHJhY2siCiAgICAgICAgICAgICkKCiAgICAgICAgc2VsZi5hc3NlcnRJc05vdE5vbmUoZmlyc3QpCiAgICAgICAgc2VsZi5hc3NlcnRJc05vdE5vbmUoc2Vjb25kKQogICAgICAgIHNlbGYuYXNzZXJ0SW4oIkF1ZGlvVHJhY2siLCBwLnNjcmlwdC50cmFja3MpCiAgICAgICAgc2VsZi5hc3NlcnRJbigiQXVkaW9UcmFja18xIiwgcC5zY3JpcHQudHJhY2tzKQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwobGVuKHAuc2NyaXB0LnRyYWNrc1siQXVkaW9UcmFjayJdLnNlZ21lbnRzKSwgMSkKICAgICAgICBzZWxmLmFzc2VydEVxdWFsKGxlbihwLnNjcmlwdC50cmFja3NbIkF1ZGlvVHJhY2tfMSJdLnNlZ21lbnRzKSwgMSkKCiAgICBkZWYgdGVzdF8xMl9kcmFmdF9pbnNwZWN0b3JfcmVhZHNfZHJhZnRfaW5mbyhzZWxmKToKICAgICAgICAiIiLmtYvor5QgZHJhZnRfaW5zcGVjdG9yIOWFvOWuuSB2NS45KyDnmoQgZHJhZnRfaW5mby5qc29uIiIiCiAgICAgICAgcCA9IEp5UHJvamVjdCgiVGVzdEluc3BlY3RvckluZm8iLCBkcmFmdHNfcm9vdD1zZWxmLnRlc3Rfb3V0cHV0LCBvdmVyd3JpdGU9VHJ1ZSkKICAgICAgICBwLmFkZF90ZXh0X3NpbXBsZSgiSGVsbG8iLCAiMHMiLCAiMXMiKQogICAgICAgIHAuc2F2ZSgpCgogICAgICAgIHJlcyA9IGNtZF9zdW1tYXJ5KAogICAgICAgICAgICByb290PXNlbGYudGVzdF9vdXRwdXQsCiAgICAgICAgICAgIG5hbWU9Tm9uZSwKICAgICAgICAgICAgcGF0aD1vcy5wYXRoLmpvaW4oc2VsZi50ZXN0X291dHB1dCwgIlRlc3RJbnNwZWN0b3JJbmZvIiksCiAgICAgICAgKQoKICAgICAgICBzZWxmLmFzc2VydFRydWUocmVzWyJvayJdLCByZXMuZ2V0KCJyZWFzb24iKSkKICAgICAgICBzZWxmLmFzc2VydEVxdWFsKHJlc1siZGF0YSJdWyJuYW1lIl0sICJUZXN0SW5zcGVjdG9ySW5mbyIpCiAgICAgICAgc2VsZi5hc3NlcnRHcmVhdGVyRXF1YWwocmVzWyJkYXRhIl1bInRyYWNrX2NvdW50Il0sIDEpCgogICAgZGVmIHRlc3RfMTNfbGF0ZV90cmFuc2l0aW9uX21hdGVyaWFsX3JlZ2lzdGVyZWQoc2VsZik6CiAgICAgICAgIiIi5rWL6K+V54mH5q615LiL6L2o5ZCO5YaF5re75Yqg6L2s5Zy65peP77yM5L+d5a2Y5YmC6IO96KGl6b2Q6L2s5Zy657Sg5p2QIiIiCiAgICAgICAgcCA9IEp5UHJvamVjdCgiVGVzdExhdGVUcmFuc2l0aW9uIiwgZHJhZnRzX3Jvb3Q9c2VsZi50ZXN0X291dHB1dCwgb3ZlcndyaXRlPVRydWUpCiAgICAgICAgcC5fZW5zdXJlX3RyYWNrKGRyYWZ0LlRyYWNrVHlwZS52aWRlbywgIlYxIikKICAgICAgICBtYXQgPSBNb2NrVmlkZW9NYXRlcmlhbCgidmlkZW9fbWF0IiwgMzAwMDAwMCwgIlZpZGVvIiwgInZpZGVvLm1wNCIpCiAgICAgICAgbWF0LndpZHRoID0gMTkyMAogICAgICAgIG1hdC5oZWlnaHQgPSAxMDgwCiAgICAgICAgc2VnID0gZHJhZnQuVmlkZW9TZWdtZW50KG1hdCwgZHJhZnQudHJhbmdlKDAsIDMwMDAwMDApKQoKICAgICAgICBwLnNjcmlwdC5hZGRfc2VnbWVudChzZWcsICJWMSIpCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChsZW4ocC5zY3JpcHQubWF0ZXJpYWxzLnRyYW5zaXRpb25zKSwgMCkKCiAgICAgICAgc2VnLmFkZF90cmFuc2l0aW9uKG5leHQoaXRlcihkcmFmdC5UcmFuc2l0aW9uVHlwZSkpLCBkdXJhdGlvbj0iMC41cyIpCiAgICAgICAgcC5zY3JpcHQucmVnaXN0ZXJfYWxsX3NlZ21lbnRfZXh0cmFzKCkKCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChsZW4ocC5zY3JpcHQubWF0ZXJpYWxzLnRyYW5zaXRpb25zKSwgMSkKICAgICAgICBzZWxmLmFzc2VydEVxdWFsKHAuc2NyaXB0Lm1hdGVyaWFscy50cmFuc2l0aW9uc1swXS5nbG9iYWxfaWQsIHNlZy50cmFuc2l0aW9uLmdsb2JhbF9pZCkKCiAgICBkZWYgdGVzdF8xNF9jbG91ZF9maW5kX2Fzc2V0X2FsbG93c19taXNzaW5nX3N0YXRpY191cmwoc2VsZik6CiAgICAgICAgIiIi5rWL6K+VIENTViDkuK0gVVJMIOS4uuepuueahOS6kemfs+S5kOS7jeWPr+aMiSBJRCDlkb3kuK3vvIzkvpvov5DooYzml7bliLfmlrAgVVJMIiIiCiAgICAgICAgY20gPSBDbG91ZE1hbmFnZXIoKQogICAgICAgIGFzc2V0ID0gY20uZmluZF9hc3NldCgiNzE3NjY4NTg3MzQ1MzUwMDQxNyIpCgogICAgICAgIHNlbGYuYXNzZXJ0SXNOb3ROb25lKGFzc2V0KQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoYXNzZXRbImlkIl0sICI3MTc2Njg1ODczNDUzNTAwNDE3IikKICAgICAgICBzZWxmLmFzc2VydEVxdWFsKGFzc2V0LmdldCgic291cmNlX2RiIiksICJjbG91ZF9tdXNpY19saWJyYXJ5LmNzdiIpCgogICAgZGVmIHRlc3RfMTVfY2xvdWRfcmVzb2x2ZV91cmxfYnlfaWRfZnJvbV9tZ2V0X2l0ZW0oc2VsZik6CiAgICAgICAgIiIi5rWL6K+V5Y+v5LuOIG1nZXRfaXRlbSDlk43lupTph4zmj5Dlj5bljbPml7bkuIvovb0gVVJMIiIiCiAgICAgICAgY20gPSBDbG91ZE1hbmFnZXIoKQogICAgICAgIGFzc2V0ID0gewogICAgICAgICAgICAiaWQiOiAiNzE3NjY4NTg3MzQ1MzUwMDQxNyIsCiAgICAgICAgICAgICJuYW1lIjogIk1vcmUgb2YgTXkgVGltZSAoTG9maSkiLAogICAgICAgICAgICAidXJsIjogIiIsCiAgICAgICAgICAgICJzb3VyY2VfZGIiOiAiY2xvdWRfbXVzaWNfbGlicmFyeS5jc3YiLAogICAgICAgICAgICAidHlwZSI6ICJWTE9HIiwKICAgICAgICB9CgogICAgICAgIGNsYXNzIFJlc3A6CiAgICAgICAgICAgIGRlZiByYWlzZV9mb3Jfc3RhdHVzKHNlbGYpOgogICAgICAgICAgICAgICAgcmV0dXJuIE5vbmUKCiAgICAgICAgICAgIGRlZiBqc29uKHNlbGYpOgogICAgICAgICAgICAgICAgcmV0dXJuIHsKICAgICAgICAgICAgICAgICAgICAicmV0IjogIjAiLAogICAgICAgICAgICAgICAgICAgICJkYXRhIjogewogICAgICAgICAgICAgICAgICAgICAgICAiZWZmZWN0X2l0ZW1fbGlzdCI6IFsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiY29tbW9uX2F0dHIiOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJpdGVtX3VybHMiOiBbCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiaHR0cHM6Ly92MjYtamlhbnlpbmcudmxhYnZvZC5jb20vdGVzdC9hdWRpbz9taW1lX3R5cGU9YXVkaW9fbXA0IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBdCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICBdCiAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgd2l0aCBwYXRjaCgiY2xvdWRfbWFuYWdlci5yZXF1ZXN0cy5wb3N0IiwgcmV0dXJuX3ZhbHVlPVJlc3AoKSkgYXMgbW9ja2VkX3Bvc3Q6CiAgICAgICAgICAgIHVybCA9IGN0Ll9yZXNvbHZlX3VybF9ieV9pZChhc3NldCkKCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbCgKICAgICAgICAgICAgdXJsLCAiaHR0cHM6Ly92MjYtamlhbnlpbmcudmxhYnZvZC5jb20vdGVzdC9hdWRpbz9taW1lX3R5cGU9YXVkaW9fbXA0IgogICAgICAgICkKICAgICAgICBzZWxmLmFzc2VydEVxdWFsKGFzc2V0WyJ1cmwiXSwgdXJsKQogICAgICAgIG1vY2tlZF9wb3N0LmFzc2VydF9jYWxsZWQoKQoKICAgIGRlZiB0ZXN0XzE2X21hY29zX21lZGlhX3N0YWdpbmdfY29waWVzX2ludG9fZHJhZnRfZGlyKHNlbGYpOgogICAgICAgICIiIua1i+ivlSBtYWNPUyDkuIvntKDmnZDkvJrlpI3liLbov5vojYnnqL/nm67lvZXlhoXpg6jvvIzpgb/lhY3liarmmKDmspnnm5LmnYPpmZDpl67popgiIiIKICAgICAgICBwID0gSnlQcm9qZWN0KCJUZXN0TWFjU3RhZ2UiLCBkcmFmdHNfcm9vdD1zZWxmLnRlc3Rfb3V0cHV0LCBvdmVyd3JpdGU9VHJ1ZSkKCiAgICAgICAgd2l0aCBwYXRjaCgiY29yZS5tZWRpYV9vcHMuc3lzLnBsYXRmb3JtIiwgImRhcndpbiIpOgogICAgICAgICAgICBzdGFnZWQgPSBwLl9zdGFnZV9tZWRpYV9mb3Jfamlhbnlpbmcoc2VsZi50ZXN0X21lZGlhKQoKICAgICAgICBzZWxmLmFzc2VydFRydWUoc3RhZ2VkLnN0YXJ0c3dpdGgob3MucGF0aC5qb2luKHAuZHJhZnRfZGlyLCAibWVkaWEiKSkpCiAgICAgICAgc2VsZi5hc3NlcnRUcnVlKG9zLnBhdGguZXhpc3RzKHN0YWdlZCkpCiAgICAgICAgc2VsZi5hc3NlcnROb3RFcXVhbChvcy5wYXRoLmFic3BhdGgoc2VsZi50ZXN0X21lZGlhKSwgb3MucGF0aC5hYnNwYXRoKHN0YWdlZCkpCgogICAgZGVmIHRlc3RfMTdfdmlkZW9fbm9ybWFsaXplcl9kZXRlY3RzX2ppYW55aW5nX3VuZnJpZW5kbHlfZ2VvbWV0cnkoc2VsZik6CiAgICAgICAgIiIi5rWL6K+V6Z2e5bi46KeE6KeG6aKR5Y+C5pWw5Lya6Kem5Y+R5Ymq5pig5YW85a656L2s56CBIiIiCiAgICAgICAgd2l0aCBwYXRjaCgKICAgICAgICAgICAgInV0aWxzLm1lZGlhX25vcm1hbGl6ZXIuX3Byb2JlX3ZpZGVvIiwKICAgICAgICAgICAgcmV0dXJuX3ZhbHVlPXsKICAgICAgICAgICAgICAgICJjb2RlY19uYW1lIjogImgyNjQiLAogICAgICAgICAgICAgICAgInBpeF9mbXQiOiAieXV2NDIwcCIsCiAgICAgICAgICAgICAgICAid2lkdGgiOiAyMDQ2LAogICAgICAgICAgICAgICAgImhlaWdodCI6IDEwODAsCiAgICAgICAgICAgIH0sCiAgICAgICAgKToKICAgICAgICAgICAgc2VsZi5hc3NlcnRUcnVlKHNob3VsZF9ub3JtYWxpemVfdmlkZW9fZm9yX2ppYW55aW5nKCJiYWQubXA0IikpCgogICAgICAgIHdpdGggcGF0Y2goCiAgICAgICAgICAgICJ1dGlscy5tZWRpYV9ub3JtYWxpemVyLl9wcm9iZV92aWRlbyIsCiAgICAgICAgICAgIHJldHVybl92YWx1ZT17CiAgICAgICAgICAgICAgICAiY29kZWNfbmFtZSI6ICJoMjY0IiwKICAgICAgICAgICAgICAgICJwaXhfZm10IjogInl1djQyMHAiLAogICAgICAgICAgICAgICAgIndpZHRoIjogMTkyMCwKICAgICAgICAgICAgICAgICJoZWlnaHQiOiAxMDgwLAogICAgICAgICAgICB9LAogICAgICAgICk6CiAgICAgICAgICAgIHNlbGYuYXNzZXJ0RmFsc2Uoc2hvdWxkX25vcm1hbGl6ZV92aWRlb19mb3JfamlhbnlpbmcoIm9rLm1wNCIpKQoKICAgIGRlZiB0ZXN0XzE4X3N0YWdlZF9tZWRpYV9hbmRfbG9jYWxfbWF0ZXJpYWxfaWRfc3RhYmxlKHNlbGYpOgogICAgICAgICIiIua1i+ivleacrOWcsOinhumikeWvvOWFpeaXtuiHquWKqOaaguWtmOiHquWMheWQq+S4lOeUn+aIkOmdnuepuueos+WumueahCBsb2NhbF9tYXRlcmlhbF9pZCIiIgogICAgICAgIHJlYWxfdmlkZW8gPSBvcy5wYXRoLmpvaW4oc2tpbGxfcm9vdCwgImFzc2V0cyIsICJ2aWRlby5tcDQiKQogICAgICAgIHAgPSBKeVByb2plY3QoIlRlc3RTdGFnZUFuZElkIiwgZHJhZnRzX3Jvb3Q9c2VsZi50ZXN0X291dHB1dCwgb3ZlcndyaXRlPVRydWUpCiAgICAgICAgc2VnID0gcC5hZGRfbWVkaWFfc2FmZShyZWFsX3ZpZGVvKQogICAgICAgIHNlbGYuYXNzZXJ0SXNOb3ROb25lKHNlZykKICAgICAgICAjIOi3r+W+hOW6lOiiq+aaguWtmOiHsyBtYXRlcmlhbHMg55uu5b2VCiAgICAgICAgc2VsZi5hc3NlcnRUcnVlKHNlZy5tYXRlcmlhbF9pbnN0YW5jZS5wYXRoLnN0YXJ0c3dpdGgob3MucGF0aC5qb2luKHAuZHJhZnRfZGlyLCAibWF0ZXJpYWxzIikpKQogICAgICAgICMgbG9jYWxfbWF0ZXJpYWxfaWQg5b+F6aG76Z2e56m65LiU562J5LqO5paH5Lu25ZCNIHN0ZW0KICAgICAgICBleHBlY3RlZF9zdGVtID0gb3MucGF0aC5zcGxpdGV4dChvcy5wYXRoLmJhc2VuYW1lKHNlZy5tYXRlcmlhbF9pbnN0YW5jZS5wYXRoKSlbMF0KICAgICAgICBzZWxmLmFzc2VydEVxdWFsKHNlZy5tYXRlcmlhbF9pbnN0YW5jZS5sb2NhbF9tYXRlcmlhbF9pZCwgZXhwZWN0ZWRfc3RlbSkKICAgICAgICBzZWxmLmFzc2VydFRydWUobGVuKHNlZy5tYXRlcmlhbF9pbnN0YW5jZS5sb2NhbF9tYXRlcmlhbF9pZCkgPiAwKQoKICAgIGRlZiB0ZXN0XzE5X2Nsb3VkX211c2ljX2Rvd25sb2FkX2ZhaWx1cmVfYWJvcnRzX3dpdGhvdXRfZHVtbXlfcGF0aChzZWxmKToKICAgICAgICAiIiLmtYvor5XkupHpn7PkuZDkuIvovb3lpLHotKXml7bkuI3kvJrms6jlhaXkuI3lrZjlnKjnmoTomZrmi5/mlofku7bot6/lvoQiIiIKICAgICAgICBwID0gSnlQcm9qZWN0KCJUZXN0Q2xvdWRNdXNpY0ZhaWwiLCBkcmFmdHNfcm9vdD1zZWxmLnRlc3Rfb3V0cHV0LCBvdmVyd3JpdGU9VHJ1ZSkKICAgICAgICB3aXRoIHBhdGNoLm9iamVjdChwLmNsb3VkX21hbmFnZXIsICJkb3dubG9hZF9hc3NldCIsIHJldHVybl92YWx1ZT1Ob25lKToKICAgICAgICAgICAgc2VnID0gcC5hZGRfY2xvdWRfbXVzaWMoIm5vbl9leGlzdGVudF9tdXNpY19pZF85OTk5OSIpCiAgICAgICAgICAgIHNlbGYuYXNzZXJ0SXNOb25lKHNlZykKICAgICAgICAgICAgIyDpn7PpopHovajpgZPkuI3lupTlrZjlnKjlpLHmlYjmrrUKICAgICAgICAgICAgdHJhY2tzID0gW3QgZm9yIHQgaW4gcC5zY3JpcHQudHJhY2tzIGlmIHQudHlwZSA9PSBkcmFmdC5UcmFja1R5cGUuYXVkaW9dCiAgICAgICAgICAgIGZvciB0IGluIHRyYWNrczoKICAgICAgICAgICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwobGVuKHQuc2VnbWVudHMpLCAwKQoKICAgIEBjbGFzc21ldGhvZAogICAgZGVmIHRlYXJEb3duQ2xhc3MoY2xzKToKICAgICAgICAjIOS4heerr+WKoOa1i+ivleS6p+eJqQogICAgICAgIGlmIG9zLnBhdGguZXhpc3RzKGNscy50ZXN0X291dHB1dCk6CiAgICAgICAgICAgIHNodXRpbC5ybXRyZWUoY2xzLnRlc3Rfb3V0cHV0LCBpZ25vcmVfZXJyb3JzPVRydWUpCgoKY2xhc3MgVGVzdFdpbmRvd3NTdGRvdXRFbmNvZGluZyh1bml0dGVzdC5UZXN0Q2FzZSk6CiAgICAiIiJXaW5kb3dzIOm7mOiupCBHQksg5Luj56CB6aG15LiL77yM5ZCrIGVtb2ppIOeahCBwcmludCDkuI3lvPFmipsgVW5pY29kZUVuY29kZUVycm9y44CCIiIiCgogICAgRU1PSklfUFJJTlRTID0gWwogICAgICAgICJcdTI3MDUgZG9uZSIsICAjIOKchQogICAgICAgICJcdTI3NGMgZmFpbGVkIiwgICMg4p2MCiAgICAgICAgIlx1MjEzOVx1ZmUwZiBpbmZvIiwgICMg4oS577iPCiAgICAgICAgIlxVMDAwMWYzODkgcGFydHkiLCAgIyDwn46JCiAgICBdCgogICAgZGVmIF9tYWtlX2dia19zdHJlYW0oc2VsZik6CiAgICAgICAgIiIi5p6E6YCg5LiA5LiqIEdCSyDnvJbnoIHjgIFlcnJvcnM9c3RyaWN0IOeahOi+k+WHuua1ge+8iOaooeaLnyBXaW5kb3dzIOm7mOiupOS7o+eggemhte+8ieOAgiIiIgogICAgICAgIHJldHVybiBpby5UZXh0SU9XcmFwcGVyKGlvLkJ5dGVzSU8oKSwgZW5jb2Rpbmc9ImdiayIsIGVycm9ycz0ic3RyaWN0IikKCiAgICBkZWYgdGVzdF8yMF9ndWFyZF9yZWxheGVzX3N0cmljdF9nYmtfc3RyZWFtKHNlbGYpOgogICAgICAgICIiIkdCSyArIHN0cmljdCDmtYHnu48gX2d1YXJkX3N0ZGlvX2VuY29kaW5nIOWQju+8jGVtb2ppIOS4jeWGjeaKmyBVbmljb2RlRW5jb2RlRXJyb3IiIiIKICAgICAgICBmcm9tIHV0aWxzLmVudl9zZXR1cCBpbXBvcnQgX2d1YXJkX3N0ZGlvX2VuY29kaW5nCgogICAgICAgIGJ1ZiA9IGlvLkJ5dGVzSU8oKQogICAgICAgIHN0cmVhbSA9IGlvLlRleHRJT1dyYXBwZXIoYnVmLCBlbmNvZGluZz0iZ2JrIiwgZXJyb3JzPSJzdHJpY3QiKQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc3RyZWFtLmVycm9ycywgInN0cmljdCIpCgogICAgICAgIG9yaWdpbmFsID0gc3lzLnN0ZG91dAogICAgICAgIHN5cy5zdGRvdXQgPSBzdHJlYW0KICAgICAgICB0cnk6CiAgICAgICAgICAgIF9ndWFyZF9zdGRpb19lbmNvZGluZygpCiAgICAgICAgICAgIGZvciBsaW5lIGluIHNlbGYuRU1PSklfUFJJTlRTOgogICAgICAgICAgICAgICAgcHJpbnQobGluZSkKICAgICAgICAgICAgc3RyZWFtLmZsdXNoKCkKICAgICAgICBmaW5hbGx5OgogICAgICAgICAgICBzeXMuc3Rkb3V0ID0gb3JpZ2luYWwKCiAgICAgICAgIyDnvJbnoIHkv53mjIHkuI3lj5jvvIzku4UgZXJyb3JzIOetlueVpeiiq+mZjee6pwogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc3RyZWFtLmVuY29kaW5nLmxvd2VyKCksICJnYmsiKQogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc3RyZWFtLmVycm9ycywgInJlcGxhY2UiKQogICAgICAgICMg5LiN5Y+v57yW56CB5a2X56ym6KKr5pu/5o2i6ICM5LiN5pWF5pKR5Lq65qGGcGjvvIzkvYbmmK8KCiAgICBkZWYgdGVzdF8yMV9ndWFyZF90b2xlcmF0ZXNfc3RyZWFtX3dpdGhvdXRfcmVjb25maWd1cmUoc2VsZik6CiAgICAgICAgIiIic3Rkb3V0IOaXoCByZWNvbmZpZ3VyZSDlsZ7mgKfml7YgX2d1YXJkX3N0ZGlvX2VuY29kaW5nIOS4jeW+l+aKm+W8guW4uCIiIgogICAgICAgIGZyb20gdXRpbHMuZW52X3NldHVwIGltcG9ydCBfZ3VhcmRfc3RkaW9fZW5jb2RpbmcKCiAgICAgICAgb3JpZ2luYWwgPSBzeXMuc3Rkb3V0CiAgICAgICAgc3lzLnN0ZG91dCA9IGlvLlN0cmluZ0lPKCkKICAgICAgICB0cnk6CiAgICAgICAgICAgIF9ndWFyZF9zdGRpb19lbmNvZGluZygpICAjIOS4jeaKm+W8guW4uWNs+mAmui/hwogICAgICAgICAgICBzZWxmLmFzc2VydEZhbHNlKGhhc2F0dHIoc3lzLnN0ZG91dCwgInJlY29uZmlndXJlIikpCiAgICAgICAgZmluYWxseToKICAgICAgICAgICAgc3lzLnN0ZG91dCA9IG9yaWdpbmFsCgogICAgZGVmIHRlc3RfMjJfZ3VhcmRfbGVhdmVzX3V0Zjhfc3RyZWFtX3VudG91Y2hlZChzZWxmKToKICAgICAgICAiIiJVVEYtOCDmtYHnmoTnvJbnoIHkuI7ovpPlh7rlhoXlrrnlv4Xpobvkv53mjIHljp/moLfvvIzkuI3ooqvpmY3nuqciIiIKICAgICAgICBmcm9tIHV0aWxzLmVudl9zZXR1cCBpbXBvcnQgX2d1YXJkX3N0ZGlvX2VuY29kaW5nCgogICAgICAgIGJ1ZiA9IGlvLkJ5dGVzSU8oKQogICAgICAgIHN0cmVhbSA9IGlvLlRleHRJT1dyYXBwZXIoYnVmLCBlbmNvZGluZz0idXRmLTgiLCBlcnJvcnM9InN0cmljdCIpCiAgICAgICAgb3JpZ2luYWwgPSBzeXMuc3Rkb3V0CiAgICAgICAgc3lzLnN0ZG91dCA9IHN0cmVhbQogICAgICAgIHRyeToKICAgICAgICAgICAgX2d1YXJkX3N0ZGlvX2VuY29kaW5nKCkKICAgICAgICAgICAgcHJpbnQoIuS4reaWh+a1i+ivlSDinIXinYwiKQogICAgICAgICAgICBzdHJlYW0uZmx1c2goKQogICAgICAgIGZpbmFsbHk6CiAgICAgICAgICAgIHN5cy5zdGRvdXQgPSBvcmlnaW5hbAoKICAgICAgICAjIOe8lueggee7neS4jeiiq+aUueWGme+8zVVURi04IOS4i+S4reaWh+S4jiBlbW9qaSDljp/moLfovpPlh7oKICAgICAgICBzZWxmLmFzc2VydEVxdWFsKHN0cmVhbS5lbmNvZGluZy5sb3dlcigpLCAidXRmLTgiKQogICAgICAgIGV4cGVjdGVkID0gIuS4reaWh+a1i+ivlSDinIXinYwiLmVuY29kZSgidXRmLTgiKSArIG9zLmxpbmVzZXAuZW5jb2RlKCJ1dGYtOCIpCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChidWYuZ2V0dmFsdWUoKSwgZXhwZWN0ZWQpCgogICAgZGVmIHRlc3RfMjNfc2V0dXBfZW52X2lzX2lkZW1wb3RlbnQoc2VsZik6CiAgICAgICAgIiIi6YeN5aSN6LCD55SoIHNldHVwX2VudigpIOS4jeW+l+aKm+W8guW4uO+8jOS5n+S4jeW+l+mHjeWkjeazqOWFpSBzeXMucGF0aCIiIgogICAgICAgIGZyb20gdXRpbHMuZW52X3NldHVwIGltcG9ydCBzZXR1cF9lbnYKCiAgICAgICAgc2V0dXBfZW52KCkKICAgICAgICBzZXR1cF9lbnYoKQoKICAgICAgICBzY3JpcHRzX2VudHJpZXMgPSBbcCBmb3IgcCBpbiBzeXMucGF0aCBpZiBwLmVuZHN3aXRoKCJzY3JpcHRzIildCiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChsZW4oc2NyaXB0c19lbnRyaWVzKSwgbGVuKHNldChzY3JpcHRzX2VudHJpZXMpKSkKCmlmIF9fbmFtZV9fID09ICJfbWFpbl9fIjoKICAgIHVuaXR0ZXN0Lm1haW4oKQo=
+# ruff: noqa: E402
+
+import io
+import os
+import shutil
+import sys
+import unittest
+from unittest.mock import patch
+
+# Bootstrap path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+skill_root = os.path.dirname(current_dir)
+scripts_path = os.path.join(skill_root, "scripts")
+vendor_path = os.path.join(scripts_path, "vendor")
+if scripts_path not in sys.path:
+    sys.path.insert(0, scripts_path)
+if vendor_path not in sys.path:
+    sys.path.insert(0, vendor_path)
+
+from cloud_manager import CloudManager
+from core.mocking_ops import MockAudioMaterial, MockVideoMaterial
+from draft_inspector import cmd_summary
+from jy_wrapper import JyProject, draft
+from utils.formatters import safe_tim
+from utils.media_normalizer import should_normalize_video_for_jianying
+
+
+class TestJyWrapper(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        # 使用临时目录作为测试环境
+        cls.test_output = os.path.join(current_dir, "output")
+        if os.path.exists(cls.test_output):
+            shutil.rmtree(cls.test_output)
+        os.makedirs(cls.test_output)
+
+        # 准备一个假的素材文件用于测试 (空文件即可，只要路径存在)
+        cls.test_media = os.path.join(cls.test_output, "test_video.mp4")
+        with open(cls.test_media, "wb") as f:
+            f.write(b"\x00" * 1024)
+
+    def test_01_initialization(self):
+        """测试项目初始化与路径探测"""
+        p = JyProject("TestInit", drafts_root=self.test_output, overwrite=True)
+        self.assertTrue(os.path.exists(os.path.join(self.test_output, "TestInit")))
+        self.assertIsInstance(p.script, draft.ScriptFile)
+
+    def test_02_add_text_simple(self):
+        """测试文本添加与模糊匹配"""
+        p = JyProject("TestText", drafts_root=self.test_output, overwrite=True)
+        # 测试模糊匹配 "Typewriter" -> "复古打字机"
+        seg = p.add_text_simple("Hello", "0s", "3s", anim_in="Typewriter")
+        self.assertIsNotNone(seg)
+        # 验证是否真的添加到了轨道
+        # 注意：这里需要根据底层库的具体结构来断言
+        # 兼容 Dict/List
+        tracks_iter = (
+            p.script.tracks.values() if isinstance(p.script.tracks, dict) else p.script.tracks
+        )
+
+        found = False
+        for track in tracks_iter:
+            t_type = getattr(track, "track_type", None) or getattr(track, "type", None)
+            if t_type == draft.TrackType.text:
+                if len(track.segments) > 0:
+                    found = True
+                    break
+        self.assertTrue(found, "Text segment should be added to a text track")
+
+    def test_03_ensure_track_logic(self):
+        """测试轨道去重逻辑"""
+        p = JyProject("TestTrack", drafts_root=self.test_output)
+        p._ensure_track(draft.TrackType.text, "MyTrack")
+        p._ensure_track(draft.TrackType.text, "MyTrack")
+
+        count = 0
+        tracks_iter = (
+            p.script.tracks.values() if isinstance(p.script.tracks, dict) else p.script.tracks
+        )
+        for t in tracks_iter:
+            if hasattr(t, "name") and t.name == "MyTrack":
+                count += 1
+        self.assertEqual(count, 1, "Track should not be duplicated")
+
+    def test_04_add_transition_simple(self):
+        """测试转场添加 (API 稳定性测试)"""
+        p = JyProject("TestTrans", drafts_root=self.test_output)
+        # 需要两个片段
+        p.add_media_safe(self.test_media, "0s", "3s", track_name="V1")
+        p.add_media_safe(self.test_media, "3s", "3s", track_name="V1")
+
+        # 尝试添加转场
+        # 注意：由于我们用的是假素材，add_media_safe 可能会因为读取时长失败。
+        # 此时 add_media_safe 应该返回 None 且打印错误，但不 Crash。
+        # 我们这里主要测试 Wrapper 的健壮性。
+        p.add_transition_simple("BlackFade", duration="0.5s", track_name="V1")
+        # 只要不报错 Crash 就算通过
+
+    def test_05_project_name_sanitization(self):
+        """测试 project_name 会被安全化且不越界到 root 外"""
+        p = JyProject("..\\..\\Bad:Name*", drafts_root=self.test_output, overwrite=True)
+        self.assertNotIn("..", p.name)
+        self.assertNotIn(":", p.name)
+        self.assertTrue(os.path.abspath(p.draft_dir).startswith(os.path.abspath(self.test_output)))
+
+    def test_06_cloud_url_guard(self):
+        """测试云下载 URL 安全校验：阻断 localhost/私网地址"""
+        cm = CloudManager()
+        self.assertTrue(cm._is_safe_download_url("https://example.com/a.mp4"))
+        self.assertFalse(cm._is_safe_download_url("http://127.0.0.1/test.mp4"))
+        self.assertFalse(cm._is_safe_download_url("http://localhost/test.mp4"))
+
+    def test_07_cloud_header_guard(self):
+        """测试下载响应头校验：拦截 html 和超大文件"""
+        cm = CloudManager()
+
+        class Resp:
+            def __init__(self, headers):
+                self.headers = headers
+
+        self.assertFalse(cm._validate_response_headers(Resp({"Content-Type": "text/html"})))
+        self.assertFalse(cm._validate_response_headers(Resp({"Content-Type": "application/json"})))
+        self.assertFalse(
+            cm._validate_response_headers(
+                Resp({"Content-Type": "video/mp4", "Content-Length": str(1024 * 1024 * 1024)})
+            )
+        )
+        self.assertTrue(
+            cm._validate_response_headers(
+                Resp({"Content-Type": "video/mp4", "Content-Length": "1024"})
+            )
+        )
+
+    def test_08_safe_join_root_guard(self):
+        """测试安全路径拼接：阻断越界路径"""
+        p = JyProject("SafeJoin", drafts_root=self.test_output, overwrite=True)
+        with self.assertRaises(ValueError):
+            p._safe_join_root("..", "..", "Windows")
+
+    def test_09_safe_tim_int_us_not_scaled(self):
+        """测试 safe_tim 对 int 输入按微秒处理，避免 55h 级别放大"""
+        self.assertEqual(safe_tim(200000), 200000)  # 0.2s
+        self.assertEqual(safe_tim(1.5), 1500000)  # float 仍按秒解析
+
+    def test_10_safe_tim_explicit_units(self):
+        """测试 safe_tim 支持 ms/us 和复合单位字符串"""
+        self.assertEqual(safe_tim("500ms"), 500000)
+        self.assertEqual(safe_tim("200000us"), 200000)
+        self.assertEqual(safe_tim("1m2.5s"), 62500000)
+        self.assertEqual(safe_tim("1h2m3s500ms"), 3723500000)
+
+    def test_11_audio_auto_layering(self):
+        """测试音频轨道重叠时自动创建后缀轨道"""
+        p = JyProject("TestAudioLayer", drafts_root=self.test_output, overwrite=True)
+
+        def fake_audio_material(path):
+            return MockAudioMaterial(f"mat_{os.path.basename(path)}", 3000000, "TestAudio", path)
+
+        with patch("core.media_ops.draft.AudioMaterial", side_effect=fake_audio_material):
+            first = p.add_audio_safe(
+                "voice_a.mp3", start_time="0s", duration="2s", track_name="AudioTrack"
+            )
+            second = p.add_audio_safe(
+                "voice_b.mp3", start_time="1s", duration="2s", track_name="AudioTrack"
+            )
+
+        self.assertIsNotNone(first)
+        self.assertIsNotNone(second)
+        self.assertIn("AudioTrack", p.script.tracks)
+        self.assertIn("AudioTrack_1", p.script.tracks)
+        self.assertEqual(len(p.script.tracks["AudioTrack"].segments), 1)
+        self.assertEqual(len(p.script.tracks["AudioTrack_1"].segments), 1)
+
+    def test_12_draft_inspector_reads_draft_info(self):
+        """测试 draft_inspector 兼容 v5.9+ 的 draft_info.json"""
+        p = JyProject("TestInspectorInfo", drafts_root=self.test_output, overwrite=True)
+        p.add_text_simple("Hello", "0s", "1s")
+        p.save()
+
+        res = cmd_summary(
+            root=self.test_output,
+            name=None,
+            path=os.path.join(self.test_output, "TestInspectorInfo"),
+        )
+
+        self.assertTrue(res["ok"], res.get("reason"))
+        self.assertEqual(res["data"]["name"], "TestInspectorInfo")
+        self.assertGreaterEqual(res["data"]["track_count"], 1)
+
+    def test_13_late_transition_material_registered(self):
+        """测试片段上轨后再添加转场时，保存前能补齐转场素材"""
+        p = JyProject("TestLateTransition", drafts_root=self.test_output, overwrite=True)
+        p._ensure_track(draft.TrackType.video, "V1")
+        mat = MockVideoMaterial("video_mat", 3000000, "Video", "video.mp4")
+        mat.width = 1920
+        mat.height = 1080
+        seg = draft.VideoSegment(mat, draft.trange(0, 3000000))
+
+        p.script.add_segment(seg, "V1")
+        self.assertEqual(len(p.script.materials.transitions), 0)
+
+        seg.add_transition(next(iter(draft.TransitionType)), duration="0.5s")
+        p.script.register_all_segment_extras()
+
+        self.assertEqual(len(p.script.materials.transitions), 1)
+        self.assertEqual(p.script.materials.transitions[0].global_id, seg.transition.global_id)
+
+    def test_14_cloud_find_asset_allows_missing_static_url(self):
+        """测试 CSV 中 URL 为空的云音乐仍可按 ID 命中，供运行时刷新 URL"""
+        cm = CloudManager()
+        asset = cm.find_asset("7176685873453500417")
+
+        self.assertIsNotNone(asset)
+        self.assertEqual(asset["id"], "7176685873453500417")
+        self.assertEqual(asset.get("source_db"), "cloud_music_library.csv")
+
+    def test_15_cloud_resolve_url_by_id_from_mget_item(self):
+        """测试可从 mget_item 响应里提取即时下载 URL"""
+        cm = CloudManager()
+        asset = {
+            "id": "7176685873453500417",
+            "name": "More of My Time (Lofi)",
+            "url": "",
+            "source_db": "cloud_music_library.csv",
+            "type": "VLOG",
+        }
+
+        class Resp:
+            def raise_for_status(self):
+                return None
+
+            def json(self):
+                return {
+                    "ret": "0",
+                    "data": {
+                        "effect_item_list": [
+                            {
+                                "common_attr": {
+                                    "item_urls": [
+                                        "https://v26-jianying.vlabvod.com/test/audio?mime_type=audio_mp4"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                }
+
+        with patch("cloud_manager.requests.post", return_value=Resp()) as mocked_post:
+            url = cm._resolve_url_by_id(asset)
+
+        self.assertEqual(
+            url, "https://v26-jianying.vlabvod.com/test/audio?mime_type=audio_mp4"
+        )
+        self.assertEqual(asset["url"], url)
+        mocked_post.assert_called()
+
+    def test_16_macos_media_staging_copies_into_draft_dir(self):
+        """测试 macOS 下素材会复制进草稿目录内部，避免剪映沙盒权限问题"""
+        p = JyProject("TestMacStage", drafts_root=self.test_output, overwrite=True)
+
+        with patch("core.media_ops.sys.platform", "darwin"):
+            staged = p._stage_media_for_jianying(self.test_media)
+
+        self.assertTrue(staged.startswith(os.path.join(p.draft_dir, "media")))
+        self.assertTrue(os.path.exists(staged))
+        self.assertNotEqual(os.path.abspath(self.test_media), os.path.abspath(staged))
+
+    def test_17_video_normalizer_detects_jianying_unfriendly_geometry(self):
+        """测试非常规视频参数会触发剪映兼容转码"""
+        with patch(
+            "utils.media_normalizer._probe_video",
+            return_value={
+                "codec_name": "h264",
+                "pix_fmt": "yuv420p",
+                "width": 2046,
+                "height": 1080,
+            },
+        ):
+            self.assertTrue(should_normalize_video_for_jianying("bad.mp4"))
+
+        with patch(
+            "utils.media_normalizer._probe_video",
+            return_value={
+                "codec_name": "h264",
+                "pix_fmt": "yuv420p",
+                "width": 1920,
+                "height": 1080,
+            },
+        ):
+            self.assertFalse(should_normalize_video_for_jianying("ok.mp4"))
+
+    def test_18_staged_media_and_local_material_id_stable(self):
+        """测试本地视频导入时自动暂存自包含且生成非空稳定的 local_material_id"""
+        real_video = os.path.join(skill_root, "assets", "video.mp4")
+        p = JyProject("TestStageAndId", drafts_root=self.test_output, overwrite=True)
+        seg = p.add_media_safe(real_video)
+        self.assertIsNotNone(seg)
+        # 路径应被暂存至 materials 目录
+        self.assertTrue(seg.material_instance.path.startswith(os.path.join(p.draft_dir, "materials")))
+        # local_material_id 必须非空且等于文件名 stem
+        expected_stem = os.path.splitext(os.path.basename(seg.material_instance.path))[0]
+        self.assertEqual(seg.material_instance.local_material_id, expected_stem)
+        self.assertTrue(len(seg.material_instance.local_material_id) > 0)
+
+    def test_19_cloud_music_download_failure_aborts_without_dummy_path(self):
+        """测试云音乐下载失败时不会注入不存在的虚拟文件路径"""
+        p = JyProject("TestCloudMusicFail", drafts_root=self.test_output, overwrite=True)
+        with patch.object(p.cloud_manager, "download_asset", return_value=None):
+            seg = p.add_cloud_music("non_existent_music_id_99999")
+            self.assertIsNone(seg)
+            # 音频轨道不应存在失效段
+            tracks = [t for t in p.script.tracks if t.type == draft.TrackType.audio]
+            for t in tracks:
+                self.assertEqual(len(t.segments), 0)
+
+    @classmethod
+    def tearDownClass(cls):
+        # 清理测试产物
+        if os.path.exists(cls.test_output):
+            shutil.rmtree(cls.test_output, ignore_errors=True)
+
+
+class TestWindowsStdoutEncoding(unittest.TestCase):
+    """Windows 默认 GBK 代码页下，含 emoji 的 print 不得抛 UnicodeEncodeError。"""
+
+    EMOJI_PRINTS = [
+        "\u2705 done",  # ✅
+        "\u274c failed",  # ❌
+        "\u2139\ufe0f info",  # ℹ️
+        "\U0001f389 party",  # 🎉
+    ]
+
+    def _make_gbk_stream(self):
+        """构造一个 GBK 编码、errors=strict 的输出流（模拟 Windows 默认代码页）。"""
+        return io.TextIOWrapper(io.BytesIO(), encoding="gbk", errors="strict")
+
+    def test_20_guard_relaxes_strict_gbk_stream(self):
+        """GBK + strict 流经 _guard_stdio_encoding 后，emoji 不再抛 UnicodeEncodeError"""
+        from utils.env_setup import _guard_stdio_encoding
+
+        buf = io.BytesIO()
+        stream = io.TextIOWrapper(buf, encoding="gbk", errors="strict")
+        self.assertEqual(stream.errors, "strict")
+
+        original = sys.stdout
+        sys.stdout = stream
+        try:
+            _guard_stdio_encoding()
+            for line in self.EMOJI_PRINTS:
+                print(line)
+            stream.flush()
+        finally:
+            sys.stdout = original
+
+        # 编码保持不变，仅 errors 策略被降级
+        self.assertEqual(stream.encoding.lower(), "gbk")
+        self.assertEqual(stream.errors, "replace")
+        # 不可编码字符被替换而不是中断进程
+        self.assertIn(b"?", buf.getvalue())
+
+    def test_21_guard_tolerates_stream_without_reconfigure(self):
+        """stdout 无 reconfigure 属性时 _guard_stdio_encoding 不得抛异常"""
+        from utils.env_setup import _guard_stdio_encoding
+
+        original = sys.stdout
+        sys.stdout = io.StringIO()
+        try:
+            _guard_stdio_encoding()  # 不抛异常即通过
+            self.assertFalse(hasattr(sys.stdout, "reconfigure"))
+        finally:
+            sys.stdout = original
+
+    def test_22_guard_leaves_utf8_stream_untouched(self):
+        """UTF-8 流的编码与输出内容必须保持原样，不被降级"""
+        from utils.env_setup import _guard_stdio_encoding
+
+        buf = io.BytesIO()
+        stream = io.TextIOWrapper(buf, encoding="utf-8", errors="strict")
+        original = sys.stdout
+        sys.stdout = stream
+        try:
+            _guard_stdio_encoding()
+            print("中文测试 ✅❌")
+            stream.flush()
+        finally:
+            sys.stdout = original
+
+        # 编码绝不被改写；UTF-8 下中文与 emoji 原样输出
+        self.assertEqual(stream.encoding.lower(), "utf-8")
+        expected = "中文测试 ✅❌".encode("utf-8") + os.linesep.encode("utf-8")
+        self.assertEqual(buf.getvalue(), expected)
+
+    def test_23_setup_env_is_idempotent(self):
+        """重复调用 setup_env() 不得抛异常，也不得重复注入 sys.path"""
+        from utils.env_setup import setup_env
+
+        setup_env()
+        setup_env()
+
+        scripts_entries = [p for p in sys.path if p.endswith("scripts")]
+        self.assertEqual(len(scripts_entries), len(set(scripts_entries)))
+
+
+if __name__ == "__main__":
+    unittest.main()
