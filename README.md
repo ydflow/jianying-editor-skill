@@ -277,25 +277,6 @@ git pull
 
 ---
 
-## 打赏支持
-
-如果这个项目对你有帮助，欢迎打赏支持。你的支持会直接转化为继续开发和维护的动力。如有任何疑问或改进建议，欢迎提交 GitHub Issue。
-
-<table>
-  <tr>
-    <td align="center">
-      <strong>支付宝</strong><br>
-      <img src="docs/images/donate/alipay.jpg" alt="支付宝收款码" width="280">
-    </td>
-    <td align="center">
-      <strong>微信</strong><br>
-      <img src="docs/images/donate/wechat.png" alt="微信收款码" width="280">
-    </td>
-  </tr>
-</table>
-
----
-
 ## 🙏 致谢与开源协议 (Acknowledgements & License)
 
 - **本项目许可**：本项目基于 [MIT License](LICENSE) 开源。
